@@ -1,0 +1,342 @@
+body,ul,li,p,pre,h1,h2,h3,h4,h5,h6{
+	margin: 0;
+	padding:0;
+	list-style: none;
+	box-sizing: border-box;
+}
+body{
+/*	background: #272822;*/
+	color: white;
+}
+a{
+	color: white;
+	text-decoration: none;
+}
+
+img{
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+}
+
+.nav{
+	width: 100%;
+	height: 101px;
+	position: fixed;
+	left:0;
+	top:0;
+	background:rgba(0,0,0,0.5); 
+	z-index: 999;
+	/*display: none;*/
+    
+}
+.box000{
+	width: 100px;
+	height:100px;
+	float: left;
+	border-radius:50%;
+	margin-left: 200px;
+	position: relative;
+}
+#tx000{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+.zhezhao{
+	width: 100px;
+	height: 100px;
+	background-color: rgba(0, 0, 0, 1);
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: all 3s linear;
+}
+.miaobian{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	box-sizing: border-box;
+	border-top: 5px solid floralwhite;
+	border-left: 5px solid floralwhite;
+	border-bottom: 5px solid blue;
+	border-right: 5px solid blue;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: all 3s linear;
+}
+.box000:hover .zhezhao{
+	background-color: rgba(0, 0, 0, 0);
+}
+.box000:hover .miaobian{
+	transform: rotate(3turn);
+}
+.off-btn{
+	width: 30px;
+	height:30px;
+    font-size: 20px;
+	border-radius: 50%;
+	margin-top: 15px;
+	float: right;
+	text-align: center;
+	line-height: 50px;
+    cursor: pointer;
+    color: white;
+}
+.headpic img{
+	width: 100%;
+	height:100%;
+    border-radius:50%;
+}
+.slide{
+	width: 100%;
+}
+.nav ul li{
+     float: left;   
+     margin-left: 12%;
+     line-height: 80px;
+     text-align: center;     
+}
+.nav ul li span{
+	transition: all 1s;
+	cursor: pointer;
+	color: white;
+}
+.nav ul li span:hover{
+	color:gray;
+}
+.nav-btn{
+	width: 50px;
+	height: 50px;
+	color: white;
+	background:rgba(0,0,0,0.5);
+	border-radius: 20px;
+	position: absolute;
+    left:48%;
+    top:200px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    z-index: 10;
+}
+.tit{
+	width: 100%;
+	height:200px;
+    position: absolute;
+    top:300px;
+    z-index: 10;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    line-height: 200px;
+}
+
+/*关于我*/
+.head{
+	width: 100%;
+	height:100px;
+	text-align: center;
+	line-height: 40px;
+	margin: 30px;
+
+}
+
+.myself{
+	width:1200px;
+	height: 500px;
+	margin: 0 auto;
+
+
+}
+/*.myself h1{
+	margin: 40px;
+}*/
+.myself p{
+	width: 500px;
+	height: 400px;
+	margin: 40px;
+	line-height: 50px;
+}
+.pic{ 
+	width: 390px;
+	height: 390px;
+	position: absolute;
+	bottom:200px;
+	left:1000px;
+	perspective-origin: top left;   /* 观察者的角度 */
+	perspective: 1800px;         /* 观察着的位置 */
+}
+.pic ul{
+	width: 380px;
+	height: 380px;
+	margin: 5px;
+	/* background-color: black; */
+	position: relative;
+	transform-style: preserve-3d;  /* 让他的所有子元素以3D的形式去展示 */
+	transition: all 5s linear;
+}
+.pic ul li{
+	width: 380px;
+	height: 380px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	/* background-color: skyblue; */
+	transition: all 5s linear;
+}
+.pic:hover .left{
+	transform: translateX(-190px) rotateY(90deg);
+	background-color: #feff93;
+	box-shadow: 0 0 15px 10px #fff;
+}
+.pic:hover .right{
+	transform: translateX(190px) rotateY(90deg);
+	background-color: red;
+	box-shadow: 0 0 15px 10px #fff;
+}
+.pic:hover .top{
+	transform: translateY(-190px) rotateX(90deg);
+	background-color: #ff00de;
+	box-shadow: 0 0 15px 10px #fff;
+}
+.pic:hover .bottom{
+	transform: translateY(190px) rotateX(90deg);
+	background-color: #0018ff;
+	box-shadow: 0 0 15px 10px #fff;
+}
+.pic:hover .before{
+	transform: translateZ(-190px);
+	background-color: #00ff00;
+	box-shadow: 0 0 15px 10px #fff;
+}
+.pic:hover .behind{
+	transform: translateZ(190px);
+	background-color: #ff9600;
+	box-shadow: 0 0 15px 10px #fff;
+}
+.pic:hover ul{
+	transform: rotate3d(1, 1, 0, 360deg);
+}
+/*jineng*/
+/*.skills{*/
+	/*width: 100%;*/
+	/*height: 100%;*/
+	/*position: relative;*/
+	/*top:30px;*/
+
+/*}*/
+.section{
+	position: relative;
+}
+.head2{
+	width: 100%;
+	height:100px;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 50px;
+    position: absolute;
+	top:100px;
+}
+.box{
+	width: 1000px;
+	height: 200px;
+	/*border: 1px solid salmon;*/
+	margin: 400px auto;
+	display: flex;
+	justify-content: space-around;
+	position: relative;
+}
+/*.can1{*/
+	/*position: absolute;*/
+	/*top: 0;*/
+	/*left: 0;*/
+	/*float: left;*/
+/*}*/
+canvas{
+	background: deepskyblue;
+	border-radius: 10px;
+	z-index: 100;
+	opacity: 0.6;
+	/*font-size: 50px;*/
+	/*color: #900;*/
+	/*text-align: center;*/
+	/*line-height: 200px;*/
+}
+.box1{
+	width: 1000px;
+	height: 100px;
+	position: absolute;
+	bottom: 280px;
+	left: 460px;
+	display: flex;
+	justify-content: space-around;
+}
+.box1-1{
+	width: 200px;
+	height: 100px;
+	/*background: deepskyblue;*/
+	font-size: 48px;
+	text-align: center;
+	line-height: 100px;
+	color: seashell;
+	border-radius: 5px;
+}
+
+/*作品*/
+.head3{
+	width: 100%;
+	height:100px;
+	text-align: center;
+	line-height: 50px;
+    position: relative;
+/*	bottom:200px;*/
+}
+.work{
+	width: 80%;
+	height:500px;
+/*	background: red;*/
+	margin: 0 auto;
+}
+
+
+/*联系我*/
+.tel-me{
+	width: 76.6%;
+	height: 100%;
+	margin: 0 auto;
+}
+.edu-head{
+	width: 100%;
+	height:20%;
+	text-align: center;
+	line-height: 60px;
+	margin-top: 180px;
+}
+.edu-middle{
+	width: 100%;
+	height:50%;
+}
+.name{
+	width: 100%;
+	height: 20%;
+	background: white;
+	color: gray;
+}
+.email{
+	width: 100%;
+	height: 20%;
+	background: white;
+	color: gray;
+	margin-top: 5%;
+}
+.message{
+	width: 100%;
+	height: 60%;
+	background: white;
+	color: gray;
+	margin-top: 5%;
+}
